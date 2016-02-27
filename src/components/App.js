@@ -1,17 +1,14 @@
-var React = require('react');
-var HelloWorldComponent = require('./HelloWorldComponent.js');
+import React from 'react'
+import Footer from './Footer'
+import SearchAttendees from '../containers/SearchAttendees'
+import VisibleAttendeesList from '../containers/VisibleAttendeesList'
 
-module.exports = React.createClass({
-  render() {
-    return (
-      <div>
-        <header>
-          <h1>Hack the North Frontend Challenge</h1>
-        </header>
-        <section>
-          <HelloWorldComponent />
-        </section>
-      </div>
-    );
-  }
-});
+const App = () => (
+  <div>
+    <SearchAttendees />
+    <VisibleAttendeesList />
+    <Footer />
+  </div>
+)
+
+export default App
