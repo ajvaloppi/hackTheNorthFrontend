@@ -1,11 +1,14 @@
 import React, { PropTypes } from 'react'
+import SkillList from './SkillList'
 
-const Attendee = ({ onClick, completed, name, picture, skills }) => (
+const Attendee = ({ onClick, name, picture, email, skills }) => (
   <div
     onClick={onClick}
   >
     <img src={picture} />
     {name}
+    Skills:
+    <SkillList skills={skills}/>
   </div>
 )
 
