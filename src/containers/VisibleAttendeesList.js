@@ -12,6 +12,10 @@ function checkSkills(skills, skill) {
   return false;
 }
 
+function checkName(name, searchText) {
+  return name.indexOf(searchText) > -1 ? true : false;
+}
+
 const getVisibleAttendees = (attendees, filter) => {
   switch (filter) {
     case 'SHOW_ALL':
@@ -40,6 +44,8 @@ const getVisibleAttendees = (attendees, filter) => {
       return attendees.filter(a => checkSkills(a.skills,'Product Design'))
     case 'SPEAKING':
       return attendees.filter(a => checkSkills(a.skills,'Public Speaking'))
+    default:
+      return attendees.filter(a => checkName(a.name, filter))
     
   }
 }

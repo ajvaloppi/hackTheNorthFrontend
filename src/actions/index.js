@@ -1,14 +1,5 @@
 import fetch from 'isomorphic-fetch'
 
-let nextAttendeeId = 0
-export const addAttendee = (text) => {
-  return {
-    type: 'ADD_ATTENDEE',
-    id: nextAttendeeId++,
-    text
-  }
-}
-
 export const setVisibilityFilter = (filter) => {
   return {
     type: 'SET_VISIBILITY_FILTER',

@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { searchAttendee } from '../actions'
+import { setVisibilityFilter } from '../actions'
 
 let SearchAttendee = ({ dispatch }) => {
   let input
@@ -13,7 +13,7 @@ let SearchAttendee = ({ dispatch }) => {
           if (!input.value.trim()) {
             return
           }
-          dispatch(searchAttendee(input.value))
+          dispatch(setVisibilityFilter(input.value))
           input.value = ''
         }}>
           <input placeholder='SEARCH ATTENDEES...' ref={node => {
