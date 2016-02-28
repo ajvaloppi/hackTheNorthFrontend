@@ -26,3 +26,7 @@ For developing you will need to start the dev server which watches files for cha
 __When you're completed__
 
 Make a new Github repository of your own, push your code to that repository, and send us the link!
+
+# Part 2) Product Vision and Design 
+
+answers located in Product_Vision_and_Design.pdf
