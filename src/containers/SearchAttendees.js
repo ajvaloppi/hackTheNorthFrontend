@@ -18,9 +18,6 @@ let AddAttendee = ({ dispatch }) => {
         <input ref={node => {
           input = node
         }} />
-        <button type="submit">
-          Add Attendee
-        </button>
       </form>
     </div>
   )

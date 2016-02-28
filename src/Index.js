@@ -1,13 +1,14 @@
-import React from 'react';
-import { render } from 'react-dom';
-import { Router, Route } from 'react-router';
-import App from './components/App';
+import React from 'react'
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import App from './components/App'
+import store from './store'
 
-window.React = React;
 
 render(
-  (<Router>
-    <Route path="/" component={App}>
-    </Route>
-  </Router>), document.getElementById('content')
-);
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('content')
+)

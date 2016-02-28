@@ -15,7 +15,7 @@ const SkillList = ({ skills }) => (
 SkillList.propTypes = {
   skills: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string.isRequired,
-    rating: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
 
   }).isRequired).isRequired
 }

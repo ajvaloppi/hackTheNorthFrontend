@@ -4,11 +4,14 @@ import SkillList from './SkillList'
 const Attendee = ({ onClick, name, picture, email, skills }) => (
   <div
     onClick={onClick}
+    className='attendee'
   >
     <img src={picture} />
-    {name}
-    Skills:
-    <SkillList skills={skills}/>
+    <div className='attendeeInfo'>
+      <div className='attendeeName'>{name}</div>
+      <div className='attendeeSkillTitle'>Skills</div>
+      <SkillList skills={skills}/>
+    </div>
   </div>
 )
 
