@@ -5,51 +5,55 @@ const Filter = () => (
   <div className='filters'>
     Filter By Skills:
     {" "}
-    <FilterLink className='filter'>
+    <FilterLink filter='SHOW_ALL'>
+      All
+    </FilterLink>
+    {" "}
+    <FilterLink filter='ANDROID'>
       Android
     </FilterLink>
     {" "}
-    <FilterLink>
+    <FilterLink filter='ANGULAR'>
       Angular
     </FilterLink>
     {" "}
-    <FilterLink>
+    <FilterLink filter='C'>
       C
     </FilterLink>
     {" "}
-    <FilterLink>
+    <FilterLink filter='C++'>
       C++
     </FilterLink>
     {" "}
-    <FilterLink>
+    <FilterLink filter='GO'>
       Go
     </FilterLink>
     {" "}
-    <FilterLink>
+    <FilterLink filter='HTML'>
       HTML/CSS
     </FilterLink>
     {" "}
-    <FilterLink>
+    <FilterLink filter='IOS'>
       iOS
     </FilterLink>
     {" "}
-    <FilterLink>
+    <FilterLink filter='JAVA'>
       Java
     </FilterLink>
     {" "}
-    <FilterLink>
+    <FilterLink filter='JS'>
       JS
     </FilterLink>
     {" "}
-    <FilterLink>
+    <FilterLink filter='NODEJS'>
       NodeJS
     </FilterLink>
     {" "}
-    <FilterLink>
+    <FilterLink filter='DESIGN'>
       Product Design
     </FilterLink>
     {" "}
-    <FilterLink>
+    <FilterLink filter='SPEAKING'>
       Public Speaking
     </FilterLink>
   </div>

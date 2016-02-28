@@ -1,8 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { addAttendee } from '../actions'
+import { searchAttendee } from '../actions'
 
-let AddAttendee = ({ dispatch }) => {
+let SearchAttendee = ({ dispatch }) => {
   let input
 
   return (
@@ -13,7 +13,7 @@ let AddAttendee = ({ dispatch }) => {
           if (!input.value.trim()) {
             return
           }
-          dispatch(addAttendee(input.value))
+          dispatch(searchAttendee(input.value))
           input.value = ''
         }}>
           <input placeholder='SEARCH ATTENDEES...' ref={node => {
@@ -26,6 +26,6 @@ let AddAttendee = ({ dispatch }) => {
     </div>
   )
 }
-AddAttendee = connect()(AddAttendee)
+SearchAttendee = connect()(SearchAttendee)
 
-export default AddAttendee
+export default SearchAttendee
