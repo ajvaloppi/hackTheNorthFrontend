@@ -6,7 +6,7 @@ const Attendee = ({ onClick, name, picture, email, skills }) => (
     onClick={onClick}
     className='attendee'
   >
-    <img src={picture} />
+    <img className='attendeePicture' src={picture} />
     <div className='attendeeInfo'>
       <div className='attendeeName'>{name}</div>
       <div className='attendeeSkillTitle'>Skills</div>
