@@ -2,21 +2,59 @@ import React from 'react'
 import FilterLink from '../containers/FilterLink'
 
 const Filter = () => (
-  <p>
-    Show:
+  <div className='filters'>
+    Filter By Skills:
     {" "}
-    <FilterLink filter="SHOW_ALL">
-      All
+    <FilterLink className='filter'>
+      Android
     </FilterLink>
-    {", "}
-    <FilterLink filter="SHOW_ACTIVE">
-      Active
+    {" "}
+    <FilterLink>
+      Angular
     </FilterLink>
-    {", "}
-    <FilterLink filter="SHOW_COMPLETED">
-      Completed
+    {" "}
+    <FilterLink>
+      C
     </FilterLink>
-  </p>
+    {" "}
+    <FilterLink>
+      C++
+    </FilterLink>
+    {" "}
+    <FilterLink>
+      Go
+    </FilterLink>
+    {" "}
+    <FilterLink>
+      HTML/CSS
+    </FilterLink>
+    {" "}
+    <FilterLink>
+      iOS
+    </FilterLink>
+    {" "}
+    <FilterLink>
+      Java
+    </FilterLink>
+    {" "}
+    <FilterLink>
+      JS
+    </FilterLink>
+    {" "}
+    <FilterLink>
+      NodeJS
+    </FilterLink>
+    {" "}
+    <FilterLink>
+      Product Design
+    </FilterLink>
+    {" "}
+    <FilterLink>
+      Public Speaking
+    </FilterLink>
+  </div>
 )
 
 export default Filter
+
+

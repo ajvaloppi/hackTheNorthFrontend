@@ -7,18 +7,22 @@ let AddAttendee = ({ dispatch }) => {
 
   return (
     <div>
-      <form onSubmit={e => {
-        e.preventDefault()
-        if (!input.value.trim()) {
-          return
-        }
-        dispatch(addAttendee(input.value))
-        input.value = ''
-      }}>
-        <input ref={node => {
-          input = node
-        }} />
-      </form>
+      <div className='searchBar'>
+        <form onSubmit={e => {
+          e.preventDefault()
+          if (!input.value.trim()) {
+            return
+          }
+          dispatch(addAttendee(input.value))
+          input.value = ''
+        }}>
+          <input placeholder='SEARCH ATTENDEES...' ref={node => {
+            input = node
+          }} />
+          <div className="fa fa-search magnifyingGlass">
+          </div>
+        </form>
+      </div>
     </div>
   )
 }

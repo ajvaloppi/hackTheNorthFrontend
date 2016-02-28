@@ -22,6 +22,34 @@ section {
 	text-align: center;
 }
 
+.magnifyingGlass {
+	margin-left: 5px;
+}
+
+.searchBar {
+	text-align: center;
+	margin: 20px;
+}
+
+.searchBar input {
+	width: 20%;
+	height: 25px;
+	font-size: 15px;
+}
+
+.filters {
+	font-size: 20px;
+	text-align: center;
+}
+
+.filter {
+	background-color: #3ab4d7;
+	border-color: #006f95;
+	border-width: 5px;
+	border-radius: 10%;
+	padding: 5px;
+}
+
 .attendee {
 	display: inline-block;
 	margin: 10px;
